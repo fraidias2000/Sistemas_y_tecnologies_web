@@ -1,0 +1,19 @@
+Weatherr
+
+Esta webapp pide al usuario el nombre de una ciudad y con él muestra en la pantalla
+2 cosas: 
+	- la estimación metereológica actual
+	- y la predicción a varios días
+	
+Para conseguir estas 2 informaciones, deben generarse 2 consultas distintas a la API REST 
+de openweathermap. 
+En este caso he implementado cada petición de una manera distinta, para mostrar 2 formas
+distintas con las que conseguir un resultado equivalente:
+	- para la estimación actual:
+		La llamada al webservice (getWeatherNowByCity) utiliza los DTOs "limpios": sólo 
+		hemos tenido que construir esos DTOs con la estructura adecuada, pero no hay 
+		parseo explícito por nuestra parte.
+	
+	- para la predicción para los próximos días:
+		La llamada al webservice (getForecastByCity) utiliza los DTOs con javax.json, 
+		donde sí hacemos un parseo quirúrgico -a pelo- del json recibido como String.
