@@ -1,0 +1,4 @@
+demo\rest\server\PersonaFacadeREST.class
+demo\bd\Persona.class
+demo\rest\server\AbstractFacade.class
+demo\rest\server\JakartaRestConfiguration.class
