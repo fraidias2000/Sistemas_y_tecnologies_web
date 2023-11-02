@@ -1,0 +1,6 @@
+fs\chat\ejb\Usuarios.class
+fs\chat\ejb\ChatStorage.class
+fs\chat\servlet\SalirDelChat.class
+fs\chat\servlet\Login.class
+fs\chat\websocket\WebSocketManager.class
+fs\chat\listener\ServletListener.class
